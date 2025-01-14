@@ -2,9 +2,9 @@ import Link from 'next/link';
 import React from 'react';
 import Menu from './Menu';
 import Image from 'next/image';
+import { Logo } from '@/assets/assets';
 import SearchBar from './SearchBar';
 import NavIcons from './NavIcons';
-import logoImg from '@/assets/logo.png'
 
 const Navbar = () => {
   return (
@@ -20,14 +20,14 @@ const Navbar = () => {
           <Menu />
         </div>
 
- 
+
         {/* BIGGER SCREENS */}
         <div className="hidden md:flex items-center justify-between gap-8 h-full">
 
           {/* LEFT */}
           <div className="w-1/3 xl:w-1/2 flex items-center justify-center gap-12">
             <Link href="/" className="flex items-center gap-3">
-              <Image src={logoImg} alt="" width={24} height={24} />
+              <Image src={Logo} alt="" width={24} height={24} />
               <div className="text-2xl tracking-wide ">SIJAN</div>
             </Link>
 
