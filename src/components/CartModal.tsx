@@ -13,6 +13,7 @@ const CartModal = () => {
       ) : (
         <>
 
+          <h2 className="text-2xl">Shopping cart</h2>
 
           {/* LIST */}
           <div className="flex flex-col gap-8">
