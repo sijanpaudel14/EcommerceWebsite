@@ -7,7 +7,7 @@ import DotNavigation from './DotNavigation'
 
 const Slider = () => {
     const [current, setCurrent] = useState(0)
-    
+
     // useEffect(() => {
     //     const interval = setInterval(() => {
     //         setCurrent(prev => (prev === slides.length - 1 ? 0 : prev + 1))
@@ -34,13 +34,12 @@ const Slider = () => {
                                 </div>
                                 {/* IMAGE CONTAINER */}
                                 <div className=" h-1/2 xl:w-1/2 xl:h-full relative">
-                                    <Image src={slide.img} alt='' layout='fill' sizes='100%' className='object-cover'/>
+                                    <Image src={slide.img} alt='' layout='fill' sizes='100%' className='object-cover' />
                                 </div>
 
                                 {/* Dot Navigation */}
                                 <DotNavigation current={current} setCurrent={setCurrent} slides={slides} />
 
-                                <button className='rounded-md bg-black text-white py-3 px-4 '>SHOP NOW</button>
                             </div>
                         ))
                     }
