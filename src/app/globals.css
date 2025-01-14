@@ -16,3 +16,10 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+.scrollbar-hide::_webkit-scrollbar{
+  display: none;
+
+}
+.scrollbar-hide{
+  scrollbar-width: none;
+}
